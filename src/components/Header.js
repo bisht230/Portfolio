@@ -19,11 +19,11 @@ const Header = () => {
              src="https://avatars.githubusercontent.com/u/87183069?v=4" 
              />
         <Flex direction={isNotSmallerScreen ? "row" : "column"} spacing="200px" padding={isNotSmallerScreen ? "32" : "0"} alignSelf="flex-start">
-             <Box mt={isNotSmallerScreen ? "0" : "-110"} alignSelf="flex-start">
+             <Box mt={isNotSmallerScreen ? "0" : "-50"} alignSelf="flex-start">
                 <Text fontSize="3xl" fontWeight="semibold" >
                     Hey, I am
                 </Text>
-                <Text fontSize="4xl" fontWeight="bold" bgGradient="linear(to-r , cyan.400 , blue.500 , purple.600)" bgClip="text">
+                <Text fontSize={isNotSmallerScreen ? "4xl" : "3xl"} fontWeight="bold" bgGradient="linear(to-r , cyan.400 , blue.500 , purple.600)" bgClip="text">
                     Deepanshu Bisht
                 </Text>
                 <Text color={isDark ? "gray.200" : "gray.500"}>I am pursuing engineering in Information Technology🎓
