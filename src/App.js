@@ -11,7 +11,7 @@ function App() {
     <div className="App">
         <VStack p="5">
           <Flex w="100%">
-              <Heading ml="8" fontSize="semibold" size="md" color="cyan.400">
+              <Heading ml="1" fontSize="semibold" size="md" color="cyan.400">
                  @Deepanshu_Bisht
               </Heading>
               <Spacer></Spacer>
