@@ -25,7 +25,7 @@ const Profile = () => {
       </Box>
       {/* Need to align it properly */}
       <Box alignSelf="center" px="32" py="25">
-          <Flex direction={isNotSmallerScreen ? "row" : "row"} mt="2">
+          <Flex direction={isNotSmallerScreen ? "column" : "row"} mt="2">
             <Link href="">
            <Flex rounded="xl" direction={isNotSmallerScreen ? "row" : "column"} mt="0" bg="gray.100" h="32vh" w="32vh" justify="flex-end">
             <Icon as={SiDiscord} w="20" h="20" color="purple.500" p="4" mb="0"></Icon>
