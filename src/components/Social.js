@@ -7,23 +7,23 @@ const Social = () => {
   return (
     <HStack spacing="25">
       <Link href="https://github.com/bisht230">
-        <Icon as={FaGithub} boxSize="45">
+        <Icon as={FaGithub} boxSize="35">
         </Icon>
       </Link>
       <Link href="https://www.linkedin.com/in/deepanshu-bisht-661785210/">
-        <Icon as={FaLinkedin} boxSize="45"></Icon>
+        <Icon as={FaLinkedin} boxSize="35"></Icon>
       </Link>
       <Link href="">
-        <Icon as={SiLeetcode} boxSize="45"></Icon>
+        <Icon as={SiLeetcode} boxSize="35"></Icon>
       </Link>
       <Link href="">
-        <Icon as={SiCodechef} boxSize="45"></Icon>
+        <Icon as={SiCodechef} boxSize="35"></Icon>
       </Link>
       <Link href="">
-        <Icon as={SiCodeforces} boxSize="45"></Icon>
+        <Icon as={SiCodeforces} boxSize="35"></Icon>
       </Link>
       <Link href="">
-        <Icon as={SiGeeksforgeeks} boxSize="45"></Icon>
+        <Icon as={SiGeeksforgeeks} boxSize="35"></Icon>
       </Link>
     </HStack>
   );
