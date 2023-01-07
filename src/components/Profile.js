@@ -1,4 +1,7 @@
-import { Box, Flex, Heading, Text, useMediaQuery } from "@chakra-ui/react";
+import { Box, Flex, Heading, Icon, Link, Text, useMediaQuery} from "@chakra-ui/react";
+import { TiWeatherPartlySunny } from "react-icons/ti";
+import {SiDiscord} from "react-icons/si"
+import {BiTask} from "react-icons/bi"
 import React from "react";
 const Profile = () => {
   const { isNotSmallerScreen } = useMediaQuery("(min-width:600px)");
@@ -20,7 +23,28 @@ const Profile = () => {
           PROJECTS
         </Heading>
       </Box>
+      {/* Need to align it properly */}
       <Box alignSelf="center" px="32" py="25">
+          <Flex direction={isNotSmallerScreen ? "row" : "row"} mt="2">
+            <Link href="">
+           <Flex rounded="xl" direction={isNotSmallerScreen ? "row" : "column"} mt="0" bg="gray.100" h="32vh" w="32vh" justify="flex-end" _hover={{bg : "purple.400"}}>
+            <Icon as={SiDiscord} w="20" h="20" color="purple.500" p="4" mb="0"></Icon>
+            <Text color="black" p="4" fontSize="xl" fontWeight="semibold">Discord Clone</Text>
+           </Flex>
+           </Link>
+           <Link href="">
+           <Flex rounded="xl" direction={isNotSmallerScreen ? "row" : "column"} mt="0" ml={isNotSmallerScreen ? "4" : "4"} bg="gray.100" h="32vh" w="32vh" justify="flex-end">
+            <Icon as={TiWeatherPartlySunny} w="20" h="20" color="black" p="4" mb="0"></Icon>
+            <Text color="black" p="4" fontSize="xl" fontWeight="semibold">Weather App</Text>
+           </Flex>
+           </Link>
+           <Link href="">
+           <Flex rounded="xl" direction={isNotSmallerScreen ? "row" : "column"} mt="0" ml={isNotSmallerScreen ? "4" : "4"} bg="gray.100" h="32vh" w="32vh" justify="flex-end">
+            <Icon as={BiTask} w="20" h="20" color="yellow.500" p="4" mb="0"></Icon>
+            <Text color="black" p="4" fontSize="xl" fontWeight="semibold">Task Manager API</Text>
+           </Flex>
+           </Link>
+          </Flex>
         </Box>
     </Flex>
   );
