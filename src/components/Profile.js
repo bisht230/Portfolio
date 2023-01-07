@@ -47,7 +47,7 @@ const Profile = () => {
            <Link href="">
            <Flex rounded="xl" direction={isNotSmallerScreen ? "row" : "column"} mt="0" ml={isNotSmallerScreen ? "4" : "4"} bg="gray.100" h="32vh" w="32vh" justify="flex-end">
             <Icon as={SiTesla} w="20" h="20" color="red.500" p="4" mb="0"></Icon>
-            <Text color="black" p="4" fontSize="xl" fontWeight="semibold">Task Manager API</Text>
+            <Text color="black" p="4" fontSize="xl" fontWeight="semibold">Tesla clone</Text>
            </Flex>
            </Link>
           </Flex>
