@@ -9,9 +9,9 @@ const Profile = () => {
     <Flex
       direction="column"
       w="100%"
-      maxWidth={{ base: "100vh", md: "130vh", lg: "130vh", xl: "130vh" }}
+      // maxWidth={{ base: "100vh", md: "130vh", lg: "130vh", xl: "130vh" }}
     >
-      <Box alignSelf="center" px="32" py="25">
+      <Box alignSelf="center">
         <Heading
           fontWeight="bold"
           color="cyan.400"
@@ -24,8 +24,8 @@ const Profile = () => {
         </Heading>
       </Box>
       {/* Need to align it properly */}
-      <Box alignSelf="center" px="35" py="25">
-          <Flex direction={isNotSmallerScreen ? "row" : "column"} mt={isNotSmallerScreen ? "0" : "2"}>
+      <Box alignSelf="center" px="35" py="25" scrollBehavior="smooth">
+          <Flex className="flexCard" direction={ isNotSmallerScreen ? "row" : "column"} mt={isNotSmallerScreen ? "0" : "2"}>
             <Link href="">
            <Flex rounded="xl" direction="column" mt={isNotSmallerScreen ? "0" : "2"} bg="gray.100" h="32vh" w="32vh" justify="flex-end">
             <Icon as={SiDiscord} w="20" h="20" color="purple.500" p="4" mb="0"></Icon>
