@@ -4,10 +4,10 @@ import {SiDiscord , SiTesla} from "react-icons/si"
 import {BiTask} from "react-icons/bi"
 import React from "react";
 const Profile = () => {
-  const { isNotSmallerScreen } = useMediaQuery("(min-width:600px)");
+  const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
   return (
     <Flex
-      direction={isNotSmallerScreen ? "row" : "column"}
+      direction="column"
       w="100%"
       maxWidth={{ base: "100vh", md: "130vh", lg: "130vh", xl: "130vh" }}
     >
@@ -20,32 +20,32 @@ const Profile = () => {
           bgClip="text"
           fontFamily="monospace"
         >
-          PROJECTS
+         PROJECTS
         </Heading>
       </Box>
       {/* Need to align it properly */}
-      <Box alignSelf="center" px="32" py="25">
-          <Flex direction={isNotSmallerScreen ? "column" : "row"} mt="2">
+      <Box alignSelf="center" px="35" py="25">
+          <Flex direction={isNotSmallerScreen ? "row" : "column"} mt={isNotSmallerScreen ? "0" : "2"}>
             <Link href="">
-           <Flex rounded="xl" direction={isNotSmallerScreen ? "row" : "column"} mt="0" bg="gray.100" h="32vh" w="32vh" justify="flex-end">
+           <Flex rounded="xl" direction="column" mt={isNotSmallerScreen ? "0" : "2"} bg="gray.100" h="32vh" w="32vh" justify="flex-end">
             <Icon as={SiDiscord} w="20" h="20" color="purple.500" p="4" mb="0"></Icon>
             <Text color="black" p="4" fontSize="xl" fontWeight="semibold">Discord Clone</Text>
            </Flex>
            </Link>
            <Link href="">
-           <Flex rounded="xl" direction={isNotSmallerScreen ? "row" : "column"} mt="0" ml={isNotSmallerScreen ? "4" : "4"} bg="gray.100" h="32vh" w="32vh" justify="flex-end">
+           <Flex rounded="xl" direction="column" mt={isNotSmallerScreen ? "0" : "2"} ml={isNotSmallerScreen ? "4" : "0"} bg="gray.100" h="32vh" w="32vh" justify="flex-end">
             <Icon as={TiWeatherPartlySunny} w="20" h="20" color="black" p="4" mb="0"></Icon>
             <Text color="black" p="4" fontSize="xl" fontWeight="semibold">Weather App</Text>
            </Flex>
            </Link>
            <Link href="">
-           <Flex rounded="xl" direction={isNotSmallerScreen ? "row" : "column"} mt="0" ml={isNotSmallerScreen ? "4" : "4"} bg="gray.100" h="32vh" w="32vh" justify="flex-end">
+           <Flex rounded="xl" direction="column" mt={isNotSmallerScreen ? "0" : "2"} ml={isNotSmallerScreen ? "4" : "0"} bg="gray.100" h="32vh" w="32vh" justify="flex-end">
             <Icon as={BiTask} w="20" h="20" color="yellow.500" p="4" mb="0"></Icon>
             <Text color="black" p="4" fontSize="xl" fontWeight="semibold">Task Manager API</Text>
            </Flex>
            </Link>
            <Link href="">
-           <Flex rounded="xl" direction={isNotSmallerScreen ? "row" : "column"} mt="0" ml={isNotSmallerScreen ? "4" : "4"} bg="gray.100" h="32vh" w="32vh" justify="flex-end">
+           <Flex rounded="xl" direction="column" mt={isNotSmallerScreen ? "0" : "2"} ml={isNotSmallerScreen ? "4" : "0"} bg="gray.100" h="32vh" w="32vh" justify="flex-end">
             <Icon as={SiTesla} w="20" h="20" color="red.500" p="4" mb="0"></Icon>
             <Text color="black" p="4" fontSize="xl" fontWeight="semibold">Tesla clone</Text>
            </Flex>
