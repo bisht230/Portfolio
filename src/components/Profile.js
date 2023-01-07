@@ -13,12 +13,15 @@ const Profile = () => {
           fontWeight="bold"
           color="cyan.400"
           fontSize="4xl"
-          bgGradient="linear(to-l , cyan.600 , blue.600 , purple.600)"
+          bgGradient="linear(to-l , cyan.700 , blue.300 , purple.400)"
           bgClip="text"
+          fontFamily="monospace"
         >
           PROJECTS
         </Heading>
       </Box>
+      <Box alignSelf="center" px="32" py="25">
+        </Box>
     </Flex>
   );
 };
