@@ -13,16 +13,16 @@ const Social = () => {
       <Link href="https://www.linkedin.com/in/deepanshu-bisht-661785210/">
         <Icon as={FaLinkedin} boxSize="35"></Icon>
       </Link>
-      <Link href="">
+      <Link href="https://leetcode.com/SuSpicious_07/">
         <Icon as={SiLeetcode} boxSize="35"></Icon>
       </Link>
-      <Link href="">
+      <Link href="https://www.codechef.com/users/deepanshu009">
         <Icon as={SiCodechef} boxSize="35"></Icon>
       </Link>
-      <Link href="">
+      <Link href="https://codeforces.com/profile/SuSpicious07">
         <Icon as={SiCodeforces} boxSize="35"></Icon>
       </Link>
-      <Link href="">
+      <Link href="https://auth.geeksforgeeks.org/user/bishtdeepanshu007/practice/">
         <Icon as={SiGeeksforgeeks} boxSize="35"></Icon>
       </Link>
     </HStack>
