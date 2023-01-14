@@ -34,11 +34,13 @@ const Profile = () => {
       </Box>
       {/* Need to align it properly */}
       <Box
+        // alignSelf={isNotSmallerScreen ? "" : "center"}
+        // px={isNotSmallerScreen ? "355" : "25"}
         alignSelf="center"
         px="35"
         py="25"
         scrollBehavior="smooth"
-        alignItems="center"
+        // alignItems="center"
       >
         <Flex
           className="flexCard"
