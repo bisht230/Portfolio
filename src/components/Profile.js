@@ -28,7 +28,7 @@ const Profile = () => {
           bgClip="text"
           fontFamily="inherit"
           boxShadow="green.500 0px 0px 0px 2px"
-          mt={isNotSmallerScreen ? "5" : "2"}
+          mt={isNotSmallerScreen ? "8" : "4"}
           alignSelf="center"
         >
           PROJECTS
@@ -47,7 +47,7 @@ const Profile = () => {
         <Flex
           className="flexCard"
           direction={isNotSmallerScreen ? "row" : "column"}
-          mt={isNotSmallerScreen ? "0" : "2"}
+          mt={isNotSmallerScreen ? "4" : "0"}
         >
           <Link href="https://discord-clone-54c69.web.app/">
             <Flex
