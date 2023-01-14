@@ -1,4 +1,4 @@
-import { HStack, Icon, Link } from "@chakra-ui/react";
+import { Box, Flex, Heading, HStack, Icon, Link, useMediaQuery } from "@chakra-ui/react";
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import {

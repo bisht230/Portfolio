@@ -6,13 +6,14 @@ import {
   Link,
   Text,
   useMediaQuery,
+  Center,
 } from "@chakra-ui/react";
 import { TiWeatherPartlySunny } from "react-icons/ti";
 import { SiDiscord, SiTesla } from "react-icons/si";
 import { BiTask } from "react-icons/bi";
 import React from "react";
 const Profile = () => {
-  const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
+  const [isNotSmallerScreen] = useMediaQuery("(min-width:768px)");
   return (
     <Flex
       direction="column"
@@ -22,17 +23,18 @@ const Profile = () => {
       <Box alignSelf="center">
         <Heading
           fontWeight="bold"
-          color="cyan.400"
-          fontSize="4xl"
-          bgGradient="linear(to-l , cyan.700 , blue.300 , purple.400)"
+          fontSize={isNotSmallerScreen ? "4xl" : "3xl"}
+          bgGradient="linear(0deg, #08AEEA 0%, #2AF598 100%)"
           bgClip="text"
-          fontFamily="monospace"
+          fontFamily="inherit"
+          boxShadow="green.500 0px 0px 0px 2px"
           mt="6"
         >
           PROJECTS
         </Heading>
       </Box>
       {/* Need to align it properly */}
+      <Center w="100%">
       <Box
         // alignSelf={isNotSmallerScreen ? "" : "center"}
         // px={isNotSmallerScreen ? "355" : "25"}
@@ -40,7 +42,6 @@ const Profile = () => {
         px="35"
         py="25"
         scrollBehavior="smooth"
-        // alignItems="center"
       >
         <Flex
           className="flexCard"
@@ -52,7 +53,8 @@ const Profile = () => {
               rounded="xl"
               direction="column"
               mt={isNotSmallerScreen ? "0" : "2"}
-              bg="gray.100"
+              ml={isNotSmallerScreen ? "20" : "0"}
+              bgImage="linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% )"
               h="32vh"
               w="32vh"
               justify="flex-end"
@@ -76,7 +78,7 @@ const Profile = () => {
               direction="column"
               mt={isNotSmallerScreen ? "0" : "2"}
               ml={isNotSmallerScreen ? "4" : "0"}
-              bg="gray.100"
+              bgImage="linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% )"
               h="32vh"
               w="32vh"
               justify="flex-end"
@@ -100,7 +102,7 @@ const Profile = () => {
               direction="column"
               mt={isNotSmallerScreen ? "0" : "2"}
               ml={isNotSmallerScreen ? "4" : "0"}
-              bg="gray.100"
+              bgImage="linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% )"
               h="32vh"
               w="32vh"
               justify="flex-end"
@@ -109,7 +111,7 @@ const Profile = () => {
                 as={BiTask}
                 w="20"
                 h="20"
-                color="yellow.500"
+                color="orange.400"
                 p="4"
                 mb="0"
               ></Icon>
@@ -124,7 +126,7 @@ const Profile = () => {
               direction="column"
               mt={isNotSmallerScreen ? "0" : "2"}
               ml={isNotSmallerScreen ? "4" : "0"}
-              bg="gray.100"
+              bgImage="linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% )"
               h="32vh"
               w="32vh"
               justify="flex-end"
@@ -144,6 +146,7 @@ const Profile = () => {
           </Link>
         </Flex>
       </Box>
+      </Center>
     </Flex>
   );
 };

@@ -14,7 +14,7 @@ import React from "react";
 const Header = () => {
   const { colorMode } = useColorMode();
   const isDark = colorMode === "dark";
-  const { isNotSmallerScreen } = useMediaQuery("(min-width:600px)");
+  const { isNotSmallerScreen } = useMediaQuery("(min-width:768px)");
   return (
     <Stack>
       <Circle
@@ -37,11 +37,11 @@ const Header = () => {
       />
       <Flex
         direction={isNotSmallerScreen ? "row" : "column"}
-        spacing="200px"
-        padding={isNotSmallerScreen ? "32" : "0"}
+        spacing="100px"
+        padding={isNotSmallerScreen ? "27" : "0"}
         alignSelf="flex-start"
       >
-        <Box mt={isNotSmallerScreen ? "0" : "-50"} alignSelf="flex-start">
+        <Box mt={isNotSmallerScreen ? "0" : "-55"} alignSelf="flex-start">
           <Text fontSize="3xl" fontWeight="semibold">
             Hey, I am
           </Text>
