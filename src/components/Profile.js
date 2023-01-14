@@ -28,7 +28,8 @@ const Profile = () => {
           bgClip="text"
           fontFamily="inherit"
           boxShadow="green.500 0px 0px 0px 2px"
-          mt="6"
+          mt={isNotSmallerScreen ? "5" : "2"}
+          alignSelf="center"
         >
           PROJECTS
         </Heading>
