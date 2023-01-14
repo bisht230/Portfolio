@@ -77,7 +77,7 @@ const Profile = () => {
             <Flex
               rounded="xl"
               direction="column"
-              mt={isNotSmallerScreen ? "0" : "2"}
+              mt={isNotSmallerScreen ? "0" : "1"}
               ml={isNotSmallerScreen ? "4" : "0"}
               bgImage="linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% )"
               h="32vh"
