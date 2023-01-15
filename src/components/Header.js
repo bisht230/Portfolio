@@ -35,7 +35,7 @@ const Header = () => {
         boxSize="195px"
         src="https://avatars.githubusercontent.com/u/87183069?v=4"
       />
-      <motion.div animate={{ scale: 1 }} initial={{ scale: 0 }} transition={{ type: "tween", duration: 1 }}>
+      <motion.div animate={{ scale: 1 }} initial={{ scale: 0 }} transition={{ type: "tween", duration: 0.5 }}>
         <Flex
           direction={isNotSmallerScreen ? "row" : "column"}
           spacing="100px"
