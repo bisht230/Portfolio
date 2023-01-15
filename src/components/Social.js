@@ -1,4 +1,5 @@
 import { Box, Flex, Heading, HStack, Icon, Link, useMediaQuery } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import {

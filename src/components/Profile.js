@@ -11,7 +11,8 @@ import {
 import { TiWeatherPartlySunny } from "react-icons/ti";
 import { SiDiscord, SiTesla } from "react-icons/si";
 import { BiTask } from "react-icons/bi";
-import React from "react";
+import { motion } from "framer-motion";
+import React, { useState } from "react";
 const Profile = () => {
   const [isNotSmallerScreen] = useMediaQuery("(min-width:768px)");
   return (
@@ -49,102 +50,111 @@ const Profile = () => {
             direction={isNotSmallerScreen ? "row" : "column"}
             mt={isNotSmallerScreen ? "4" : "0"}
           >
-            <Link href="https://discord-clone-54c69.web.app/">
-              <Flex
-                rounded="xl"
-                direction="column"
-                mt={isNotSmallerScreen ? "0" : "1"}
-                ml={isNotSmallerScreen ? "20" : "0"}
-                bgImage="linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% )"
-                h="32vh"
-                w="32vh"
-                justify="flex-end"
-              >
-                <Icon
-                  as={SiDiscord}
-                  w="20"
-                  h="20"
-                  color="purple.500"
-                  p="4"
-                  mb="0"
-                ></Icon>
-                <Text color="black" p="4" fontSize="xl" fontWeight="semibold">
-                  Discord Clone
-                </Text>
-              </Flex>
-            </Link>
-            <Link href="https://weather-finder.cyclic.app/">
-              <Flex
-                rounded="xl"
-                direction="column"
-                mt={isNotSmallerScreen ? "0" : "1"}
-                ml={isNotSmallerScreen ? "4" : "0"}
-                bgImage="linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% )"
-                h="32vh"
-                w="32vh"
-                justify="flex-end"
-              >
-                <Icon
-                  as={TiWeatherPartlySunny}
-                  w="20"
-                  h="20"
-                  color="black"
-                  p="4"
-                  mb="0"
-                ></Icon>
-                <Text color="black" p="4" fontSize="xl" fontWeight="semibold">
-                  Weather App
-                </Text>
-              </Flex>
-            </Link>
-            <Link href="https://github.com/bisht230/Task-Manager-API">
-              <Flex
-                rounded="xl"
-                direction="column"
-                mt={isNotSmallerScreen ? "0" : "1"}
-                ml={isNotSmallerScreen ? "4" : "0"}
-                bgImage="linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% )"
-                h="32vh"
-                w="32vh"
-                justify="flex-end"
-              >
-                <Icon
-                  as={BiTask}
-                  w="20"
-                  h="20"
-                  color="orange.400"
-                  p="4"
-                  mb="0"
-                ></Icon>
-                <Text color="black" p="4" fontSize="xl" fontWeight="semibold">
-                  Task Manager API
-                </Text>
-              </Flex>
-            </Link>
-            <Link href="https://dashing-blini-75f5a9.netlify.app/">
-              <Flex
-                rounded="xl"
-                direction="column"
-                mt={isNotSmallerScreen ? "0" : "1"}
-                ml={isNotSmallerScreen ? "4" : "0"}
-                bgImage="linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% )"
-                h="32vh"
-                w="32vh"
-                justify="flex-end"
-              >
-                <Icon
-                  as={SiTesla}
-                  w="20"
-                  h="20"
-                  color="red.500"
-                  p="4"
-                  mb="0"
-                ></Icon>
-                <Text color="black" p="4" fontSize="xl" fontWeight="semibold">
-                  Tesla clone
-                </Text>
-              </Flex>
-            </Link>
+            <motion.div whileHover={{ scale: 1.2 }}>
+              <Link href="https://discord-clone-54c69.web.app/">
+                <Flex
+                  rounded="xl"
+                  direction="column"
+                  mt={isNotSmallerScreen ? "0" : "1"}
+                  ml={isNotSmallerScreen ? "20" : "0"}
+                  bgImage="linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% )"
+                  h="32vh"
+                  w="32vh"
+                  justify="flex-end"
+                >
+
+                  <Icon
+                    as={SiDiscord}
+                    w="20"
+                    h="20"
+                    color="purple.500"
+                    p="4"
+                    mb="0"
+                  ></Icon>
+                  <Text color="black" p="4" fontSize="xl" fontWeight="semibold">
+                    Discord Clone
+                  </Text>
+                </Flex>
+              </Link>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.2 }}>
+              <Link href="https://weather-finder.cyclic.app/">
+                <Flex
+                  rounded="xl"
+                  direction="column"
+                  mt={isNotSmallerScreen ? "0" : "1"}
+                  ml={isNotSmallerScreen ? "4" : "0"}
+                  bgImage="linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% )"
+                  h="32vh"
+                  w="32vh"
+                  justify="flex-end"
+                >
+                  <Icon
+                    as={TiWeatherPartlySunny}
+                    w="20"
+                    h="20"
+                    color="black"
+                    p="4"
+                    mb="0"
+                  ></Icon>
+                  <Text color="black" p="4" fontSize="xl" fontWeight="semibold">
+                    Weather App
+                  </Text>
+                </Flex>
+              </Link>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.2 }}>
+              <Link href="https://github.com/bisht230/Task-Manager-API">
+                <Flex
+                  rounded="xl"
+                  direction="column"
+                  mt={isNotSmallerScreen ? "0" : "1"}
+                  ml={isNotSmallerScreen ? "4" : "0"}
+                  bgImage="linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% )"
+                  h="32vh"
+                  w="32vh"
+                  justify="flex-end"
+                >
+                  <Icon
+                    as={BiTask}
+                    w="20"
+                    h="20"
+                    color="orange.400"
+                    p="4"
+                    mb="0"
+                  ></Icon>
+                  <Text color="black" p="4" fontSize="xl" fontWeight="semibold">
+                    Task Manager API
+                  </Text>
+                </Flex>
+              </Link>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.2 }}>
+              <Link href="https://dashing-blini-75f5a9.netlify.app/">
+                <Flex
+                  rounded="xl"
+                  direction="column"
+                  mt={isNotSmallerScreen ? "0" : "1"}
+                  ml={isNotSmallerScreen ? "4" : "0"}
+                  bgImage="linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% )"
+                  h="32vh"
+                  w="32vh"
+                  justify="flex-end"
+                >
+                  <Icon
+                    as={SiTesla}
+                    w="20"
+                    h="20"
+                    color="red.500"
+                    p="4"
+                    mb="0"
+                  ></Icon>
+                  <Text color="black" p="4" fontSize="xl" fontWeight="semibold">
+                    Tesla Clone
+                  </Text>
+                </Flex>
+              </Link>
+            </motion.div>
           </Flex>
         </Box>
       </Center>
