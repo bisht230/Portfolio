@@ -55,17 +55,17 @@ const Header = () => {
               Deepanshu Bisht
             </Text>
             <Text color={isDark ? "gray.200" : "gray.500"}>
-            I am an Information Technology engineering student seeking opportunities for collaboration on web development projects.
+            ● I am an Information Technology engineering student seeking opportunities for collaboration on web development projects.
               <Text color={isDark ? "gray.200" : "gray.500"}>
-              I am a dedicated and enthusiastic learner, eager to work across technologies and domains.
+            ● I am a dedicated and enthusiastic learner, eager to work across technologies and domains.
               </Text>
               <Text color={isDark ? "gray.200" : "gray.500"}>
-              I have a keen interest in exploring new technologies and utilizing them to solve real-world problems.
+            ● I have a keen interest in exploring new technologies and utilizing them to solve real-world problems.
               </Text>
               <Text color={isDark ? "gray.200" : "gray.500"}>
-              In addition, I am passionate about mentoring and guiding others in their learning journey. lems.
+            ●  In addition, I am passionate about mentoring and guiding others in their learning journey. lems.
               </Text>
-              Currently, I am focused on Full Stack Web Development and honing my skills in Data Structures and Algorithms.
+            ●  Currently, I am focused on Full Stack Web Development and honing my skills in Data Structures and Algorithms.
             </Text>
             <Button
               mt="6"
